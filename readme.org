@@ -3,9 +3,10 @@
 ** Instructions
    To verify that everything works as it should, follow these steps:
 
-  - Create a virtual environment:
+  - Create a virtual environment. This is a Python 2 project so, if
+    you have Python 3 and 2 installed, remember to use =virtualenv2= instead:
     #+BEGIN_SRC sh
-    virtualenv2 demo
+    virtualenv demo
     #+END_SRC
   - Activate it:
     #+BEGIN_SRC sh
