@@ -23,9 +23,18 @@
     #+BEGIN_SRC sh
     virtualenv2 demo
     #+END_SRC
-  - Activate it: `cd demo && source bin/activate`
-  - Clone this repo: `git clone https://github.com/hso/demo.git`
-  - Install project dependencies: `pip install -r requirements.txt`
+  - Activate it:
+    #+BEGIN_SRC sh
+    cd demo && source bin/activate
+    #+END_SRC
+  - Clone this repo:
+    #+BEGIN_SRC sh
+    git clone https://github.com/hso/demo.git
+    #+END_SRC
+  - Install project dependencies:
+    #+BEGIN_SRC sh
+    pip install -r requirements.txt
+    #+END_SRC
   - Prepare a PostgreSQL database. Default configuration is:
     #+BEGIN_SRC python
     DATABASES = {
@@ -44,7 +53,12 @@
     GRANT ALL PRIVILEGES ON DATABASE demo TO demo;
     #+END_SRC
 
-- Migrate: `./manage.py migrate`
-- Load product data: `./manage.py load_data input.csv`
-- Fire up a development server and test it with cURL
-- Profit!
+- Migrate:
+  #+BEGIN_SRC sh
+  ./manage.py migrate
+  #+END_SRC
+- Load product data:
+  #+BEGIN_SRC sh
+  ./manage.py load_data input.csv
+  #+END_SRC
+- Fire up a development server and test it with cURL. Profit!
