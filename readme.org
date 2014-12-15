@@ -62,3 +62,17 @@
   ./manage.py load_data input.csv
   #+END_SRC
 - Fire up a development server and test it with cURL. Profit!
+
+** Testing with cURL
+   - List products without stock:
+     #+BEGIN_SRC sh
+     curl -H "Accept: application/json" http://127.0.0.1:8000/api/product/
+     #+END_SRC
+   - List records for products without stock that belong to retail =U10=:
+     #+BEGIN_SRC sh
+     curl -H "Accept: application/json" http://127.0.0.1:8000/api/product/?retail_code=U10
+     #+END_SRC
+   - List records for retails without stock for product =138751=:
+     #+BEGIN_SRC sh
+     curl -H "Accept: application/json" http://127.0.0.1:8000/api/product/?material_code=138751
+     #+END_SRC
