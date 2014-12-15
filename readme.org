@@ -1,7 +1,7 @@
 * Demo project
 
 ** Instructions
-   To verify that everything works as it should, follow this steps:
+   To verify that everything works as it should, follow these steps:
 
   - Create a virtual environment:
     #+BEGIN_SRC sh
