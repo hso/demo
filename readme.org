@@ -13,7 +13,7 @@
     #+END_SRC
   - Clone this repo:
     #+BEGIN_SRC sh
-    git clone https://github.com/hso/demo.git
+    git clone https://github.com/hso/demo.git && cd demo
     #+END_SRC
   - Install project dependencies:
     #+BEGIN_SRC sh
