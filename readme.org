@@ -1,8 +1,8 @@
 * Demo project
 
   Objetivo :
-  - [ ] Crear una aplicación en Django que permita leer el archivo CSV adjunto.
-  - [ ] Los datos de la hoja se deben almacenar en una base datos soportada por Django.
+  - [X] Crear una aplicación en Django que permita leer el archivo CSV adjunto.
+  - [X] Los datos de la hoja se deben almacenar en una base datos soportada por Django.
   - [ ] Crear un servicio web que entregue la lista de Productos que tienen Instock=0.
   - [ ] Los parámetros que puede recibir el servicios son : Codigo de Local y Codigo de MAterial.
   - [ ] Si se envía el código del Local, el servicio entrega la lista de productos con Instock 0.
