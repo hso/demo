@@ -15,3 +15,33 @@
   - Se debe utilizar Tastypie.
   - No es necesario normalizar el modelo.
   - Buscar optimizar la carga del CSV mediante el uso de hilos, procesos u otras técnicas.
+
+** Instructions
+   To verify that everything works as it should, follow this steps:
+
+  - Create a virtual environment: `virtualenv2 demo`
+  - Activate it: `cd demo && source bin/activate`
+  - Clone this repo: `git clone https://github.com/hso/demo.git`
+  - Install project dependencies: `pip install -r requirements.txt`
+  - Prepare a PostgreSQL database. Default configuration is:
+    #+BEGIN_SRC python
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'USER': 'demo',
+            'PASSWORD': 'demo',
+            'NAME': 'demo',
+        }
+    }
+    #+END_SRC
+
+    #+BEGIN_SRC sql
+    CREATE DATABASE demo;
+    CREATE USER demo WITH PASSWORD 'demo';
+    GRANT ALL PRIVILEGES ON DATABASE demo TO demo;
+    #+END_SRC
+
+- Migrate: `./manage.py migrate`
+- Load product data: `./manage.py load_data input.csv`
+- Fire up a development server and test it with cURL
+- Profit!
