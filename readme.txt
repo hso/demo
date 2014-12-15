@@ -1,0 +1,15 @@
+Objetivo :
+1) Crear una aplicación en Django que permita leer el archivo CSV adjunto.
+2) Los datos de la hoja se deben almacenar en una base datos soportada por Django.
+3) Crear un servicio web que entregue la lista de Productos que tienen Instock=0.
+4) Los parámetros que puede recibir el servicios son : Codigo de Local y Codigo de MAterial.
+5) Si se envía el código del Local, el servicio entrega la lista de productos con Instock 0.
+6) Si se envía el código del Material, el servicio entrega la lista de los locales donde el Instock es 0 para ese producto.
+7) El servicio se deberá crear usando TastyPie. 
+
+Detalles adicionales
+- Subir el código a Github o a Bitbucket.
+- Crear pruebas unitarias para la aplicación o usar TDD.
+- Se debe utilizar Tastypie.
+- No es necesario normalizar el modelo.
+- Buscar optimizar la carga del CSV mediante el uso de hilos, procesos u otras técnicas.
