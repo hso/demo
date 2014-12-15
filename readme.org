@@ -19,7 +19,10 @@
 ** Instructions
    To verify that everything works as it should, follow this steps:
 
-  - Create a virtual environment: `virtualenv2 demo`
+  - Create a virtual environment:
+    #+BEGIN_SRC sh
+    virtualenv2 demo
+    #+END_SRC
   - Activate it: `cd demo && source bin/activate`
   - Clone this repo: `git clone https://github.com/hso/demo.git`
   - Install project dependencies: `pip install -r requirements.txt`
