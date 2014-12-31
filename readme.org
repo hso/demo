@@ -20,6 +20,11 @@
     #+BEGIN_SRC sh
     pip install -r requirements.txt
     #+END_SRC
+
+    Remember that to build =psycopg= you need python and postgres
+    headers. Install =libpq-dev= and =libpython-dev= packages if using
+    a debian-based system.
+
   - Prepare a PostgreSQL database. Default configuration is:
     #+BEGIN_SRC python
     DATABASES = {
