@@ -3,3 +3,6 @@ django-extensions==1.4.9
 django-tastypie==0.12.1
 petl==0.26
 psycopg2==2.5.4
+python-mimeparse==0.1.4
+python-dateutil==2.3
+six==1.8.0
